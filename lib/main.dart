@@ -1,6 +1,9 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const FitnessApp());
 }
 
@@ -12,7 +15,7 @@ class FitnessApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fitness App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 152, 60, 36)),
         useMaterial3: true,
       ),
       home: const FitnessHomePage(title: 'Fitness App Home'),
