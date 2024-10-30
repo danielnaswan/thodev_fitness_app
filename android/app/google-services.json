@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "948950997922",
+    "project_id": "thodev-fitness-app",
+    "storage_bucket": "thodev-fitness-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948950997922:android:eecb4bac326bd58155f0fb",
+        "android_client_info": {
+          "package_name": "com.example.thodev_fitness_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC97eH2GSPuyHIrjkMZPNcRUliWbNgwwpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
