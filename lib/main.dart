@@ -12,7 +12,7 @@ class FitnessApp extends StatelessWidget {
     return MaterialApp(
       title: 'Fitness App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 152, 60, 36)),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
         useMaterial3: true,
       ),
       home: const FitnessHomePage(title: 'Fitness App Home'),
