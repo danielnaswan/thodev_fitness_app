@@ -1,5 +1,8 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'workout_page.dart'; // Import the workout page
+import 'progress_page.dart'; // Import the progress page
+import 'tips_page.dart'; // Import the tips page
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -54,28 +57,32 @@ class _FitnessHomePageState extends State<FitnessHomePage> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Track your workouts, monitor progress, and stay motivated.',
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 40),
             ElevatedButton(
               onPressed: () {
-                // Add functionality for navigating to workout page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const WorkoutPage()),
+                );
               },
               child: const Text('Start Workout'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add functionality for navigating to progress page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const ProgressPage()),
+                );
               },
               child: const Text('View Progress'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
-                // Add functionality for navigating to tips page
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const TipsPage()),
+                );
               },
               child: const Text('Fitness Tips'),
             ),
